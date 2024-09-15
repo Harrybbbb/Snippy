@@ -1,26 +1,26 @@
 export const content = [
-    {
-      id: 0,
-        date: '8 sept, 2024',
-        title: 'Debouncing Click Events in javascript⚡',
-        language: 'Javascript',
-        category: 'Javascript',
-        code: `function debounce(func, delay) {
+  {
+    id: 0,
+    date: "8 sept, 2024",
+    title: "Debouncing Click Events in javascript⚡",
+    language: "Javascript",
+    category: "Javascript",
+    code: `function debounce(func, delay) {
   let debounceTimer;
   return function(...args) {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => func.apply(this, args), delay);
   };
 }
-`
-    },
-    {
-      id: 1,
-        date: '8 sept, 2024',
-        title: 'Centering Elements with Flexbox 🎯',
-        language: 'CSS',
-        category: 'CSS',
-        code: `<body>
+`,
+  },
+  {
+    id: 1,
+    date: "8 sept, 2024",
+    title: "Centering Elements with Flexbox 🎯",
+    language: "CSS",
+    category: "CSS",
+    code: `<body>
     <div class="centered">
         <p>Centered Content</p>
     </div>
@@ -32,16 +32,15 @@ export const content = [
   align-items: center;
   height: 100vh;
 }
-    </style>`
-
-    },
-    {
-      id: 2,
-        date: '8 sept, 2024',
-        title: 'Simple Counter with React Hooks 🔢',
-        language: 'React',
-        category: 'React',
-        code: `import { useState } from 'react'
+    </style>`,
+  },
+  {
+    id: 2,
+    date: "8 sept, 2024",
+    title: "Simple Counter with React Hooks 🔢",
+    language: "React",
+    category: "React",
+    code: `import { useState } from 'react'
 function Counter() {
   const [count, setCount] = useState(0);
 
@@ -52,30 +51,30 @@ function Counter() {
     </div>
   );
 }
-`
-    },
-    {
-      id: 3,
-        date: '8 sept, 2024',
-        title: 'Form and Function: Your Personal Info Gateway 📝',
-        language: 'HTML',
-        category: 'HTML',
-        code: `<form action="/submit" method="post">
+`,
+  },
+  {
+    id: 3,
+    date: "8 sept, 2024",
+    title: "Form and Function: Your Personal Info Gateway 📝",
+    language: "HTML",
+    category: "HTML",
+    code: `<form action="/submit" method="post">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name" required>
   <label for="email">Email:</label>
   <input type="email" id="email" name="email" required>
   <input type="submit" value="Submit">
 </form>
-`
-    },
-    {
-      id: 4,
-        date: '8 sept, 2024',
-        title: 'Creating a Basic HTTP Server 🌐',
-        language: 'Node.js',
-        category: 'Node.js',
-        code: `const http = require('http');
+`,
+  },
+  {
+    id: 4,
+    date: "8 sept, 2024",
+    title: "Creating a Basic HTTP Server 🌐",
+    language: "Node.js",
+    category: "Node.js",
+    code: `const http = require('http');
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -85,16 +84,16 @@ const server = http.createServer((req, res) => {
 
 server.listen(3000, () => {
   console.log('Server running at http://localhost:3000/');
-});`
-    },
-   
-    {
-      id: 5,
-        date: '8 sept, 2024',
-        title: 'Sorting an Array in Java 🃏',
-        language: 'Java',
-        category: 'Java',
-        code: `import java.util.Arrays;
+});`,
+  },
+
+  {
+    id: 5,
+    date: "8 sept, 2024",
+    title: "Sorting an Array in Java 🃏",
+    language: "Java",
+    category: "Java",
+    code: `import java.util.Arrays;
 
 public class Main {
   public static void main(String[] args) {
@@ -102,15 +101,15 @@ public class Main {
     Arrays.sort(numbers);
     System.out.println(Arrays.toString(numbers));
   }
-}`
-    },
-    {
-      id: 6,
-      date: '8 sept, 2024',
-      title: 'Responsive Grid Layout 🎛️',
-      language: 'CSS',
-      category: 'CSS',
-      code: `<body>
+}`,
+  },
+  {
+    id: 6,
+    date: "8 sept, 2024",
+    title: "Responsive Grid Layout 🎛️",
+    language: "CSS",
+    category: "CSS",
+    code: `<body>
     <div class="grid-container">
         <div class="grid-item">1</div>
         <div class="grid-item">2</div>
@@ -126,27 +125,27 @@ display: grid;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 gap: 10px;
 }
-</style>`
+</style>`,
   },
-    {
-      id: 7,
-      date: '14 sept, 2024',
-      title: 'Basic Git Commands for Repositories 🚀',
-      language: 'Git',
-      category: 'Git',
-      code: `git init
+  {
+    id: 7,
+    date: "14 sept, 2024",
+    title: "Basic Git Commands for Repositories 🚀",
+    language: "Git",
+    category: "Git",
+    code: `git init
 git add .
 git commit -m "Initial commit"
 git remote add origin <remote_repository_url>
 git push -u origin master
-`
+`,
   },
   {
     id: 8,
-    date: '8 sept, 2024',
-    title: 'program to do Selection Sort on an array. 📊✨',
-    language: 'C++',
-    category: 'DSA',
+    date: "8 sept, 2024",
+    title: "program to do Selection Sort on an array. 📊✨",
+    language: "C++",
+    category: "DSA",
     code: `#include<bits/stdc++.h>
 
 using namespace std;
@@ -181,15 +180,15 @@ int main() {
   cout << "\n";
   selection_sort(arr, n);
   return 0;
-}`
-},
-{
-  id: 9,
-  date: '14 sept, 2024',
-  title: 'program to do Bubble Sort on an array. 📊✨',
-  language: 'c++',
-  category: 'DSA',
-  code: `#include <bits/stdc++.h>
+}`,
+  },
+  {
+    id: 9,
+    date: "14 sept, 2024",
+    title: "program to do Bubble Sort on an array. 📊✨",
+    language: "c++",
+    category: "DSA",
+    code: `#include <bits/stdc++.h>
 using namespace std;
 
 void bubble_sort(int arr[], int n) {
@@ -229,15 +228,15 @@ int main()
 
     bubble_sort(arr, n);
     return 0;
-}`
-},
-{
-  id: 10,
-  date: '14 sept, 2024',
-  title: 'program to do Insertion Sort on an array. 📊✨',
-  language: 'c++',
-  category: 'DSA',
-  code: `#include <bits/stdc++.h>
+}`,
+  },
+  {
+    id: 10,
+    date: "14 sept, 2024",
+    title: "program to do Insertion Sort on an array. 📊✨",
+    language: "c++",
+    category: "DSA",
+    code: `#include <bits/stdc++.h>
 using namespace std;
 
 void insertion_sort(int arr[], int n) {
@@ -271,6 +270,6 @@ int main()
 
     insertion_sort(arr, n);
     return 0;
-}`
-},
-]
+}`,
+  },
+];
